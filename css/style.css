@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0 5px;
+  background-repeat: repeat;
+  font-family: 'Spectral', cursive;
+  background-image: url('../img/circles-light.png');
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  background-color: rgb(255, 255, 245, .6);
+}
+
+#space {
+  height: 150px;
+}
+
+@media (max-width: 600px) {
+  #space {
+    display: none;
+  }
+}
+
+#quote {
+  padding: 20px;
+  border-width: 1px;
+  border-color: #bbb;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#text {
+  color: #222;
+  min-height: 60px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+#quoter {
+  right: 5px;
+  color: #555;
+  bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+}
+
+#quoter::before {
+  content: "["
+}
+
+#quoter::after {
+  content: "]"
+}
+
+#buttons {
+  text-align: right;
+  padding-top: 15px;
+}
+
+#buttons button {
+  padding: 0;
+  border: none;
+  font-size: 36px;
+  transition: color 1s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#buttons #tweet:hover {
+  color: #1da1f2;
+  transition: color 500ms;
+}
+
+#buttons #next:hover {
+  color: #5c5;
+  transition: color 500ms;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+footer {
+  color: #888;
+  height: 180px;
+  margin: 0 auto;
+  font-size: 12px;
+  max-width: 300px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+footer hr {
+  border-color: #fff;
+}
+
+footer a {
+  color: #888;
+}
